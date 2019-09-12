@@ -1,20 +1,16 @@
 {
   "name": "redux-reverb",
-  "author": "Conor Davidson",
   "version": "1.0.0",
+  "description": "Dead simple side-effect management for redux.",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "author": "Conor Davidson <conor@conordavidson.com>",
   "license": "MIT",
-  "main": "dist/index.js",
   "scripts": {
-    "build": "BABEL_ENV=production node_modules/.bin/babel --out-dir='dist' src --copy-files --source-maps",
-    "build:watch": "BABEL_ENV=production node_modules/.bin/babel -w --verbose --out-dir='dist' src --copy-files --source-maps"
+    "build": "tsc --pretty"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.3",
-    "@babel/core": "^7.4.3",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
-    "babel-plugin-module-resolver": "^3.2.0"
+    "redux": "^4.0.4",
+    "typescript": "^3.6.3"
   }
 }
